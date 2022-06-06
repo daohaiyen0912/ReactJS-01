@@ -24,16 +24,67 @@ function NavItem (props) {
   );
 }
 
+function SanPham(props) {
+  return (
+    <div className="SanPham">
+      <div className="titleSP">
+        <a>
+          Quản lý sản phẩm /
+        </a>
+        <a>
+          {props.name}
+        </a>
+      </div>
+      <div className = "TenSP">
+        <h1>{props.name}</h1>
+      </div>
+    </div>
+  );
+}
+
+function BangTT (props) {
+  return (
+    <table>
+      <thead>
+        <tr>
+          <th>Trạng thái <span>icon</span></th>
+          <th>More <span>icon</span></th>
+          <th>icon1</th>
+          <th>icon2</th>
+          <th>icon3</th>
+          <th>
+            <button>Thêm mới <span>icon</span></button>
+          </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>
+            <input type="checkbox"></input>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  );
+}
+
 function App() {
   return (
-    <NavBar>
-      <NavItem item="MDM"/>
-      <NavItem item="Quản lý sản phẩm"/>
-      <NavItem item="Quản lý khách hàng"/>
-      <NavItem item="Quản lý nhà cung cấp"/>
-      <NavItem item="Quản lý tài sản"/>
-      <NavItem item="Quản lý địa điểm"/>
-    </NavBar>
+    <div>
+      <NavBar>
+        <NavItem item="MDM"/>
+        <NavItem item="Quản lý sản phẩm"/>
+        <NavItem item="Quản lý khách hàng"/>
+        <NavItem item="Quản lý nhà cung cấp"/>
+        <NavItem item="Quản lý tài sản"/>
+        <NavItem item="Quản lý địa điểm"/>
+      </NavBar>
+      <div className="Content">
+        <SanPham name="Sản phẩm" />
+        <BangTT />
+      </div>
+    </div>
   );
 };
 

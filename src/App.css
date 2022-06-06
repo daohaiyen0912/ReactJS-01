@@ -41,16 +41,23 @@ button {
   font-size: calc(10px + 2vmin);
 }
 
-.nav-item {
-  width: calc(var(--nav-size)*0.8);
-  justify-content: center;
+.navbar-nav {
   display: flex;
-  align-items: center;
+  flex-wrap: nowrap;
+  /* flex-direction: column; */
+  /* background-color: red; */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  background-color: #dddddd;
+}
+.nav-item {
+  float: right;
 }
 .nav-icon {
-  --button-size: calc(var(--nav-size)*0.5);
-  width: calc(var(--button-size));
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  padding: 8px;
+  text-decoration: none;
 }
