@@ -26,12 +26,12 @@ function NavItem (props) {
 
 function SanPham(props) {
   return (
-    <div className="SanPham">
+    <div className="sanPham">
       <div className="titleSP">
         <a>
           Quản lý sản phẩm /
         </a>
-        <a>
+        <a className="link-SP">
           {props.name}
         </a>
       </div>
@@ -44,7 +44,7 @@ function SanPham(props) {
 
 function BangTT (props) {
   return (
-    <table>
+    <table className="tableTT">
       <thead>
         <tr>
           <th>Trạng thái <span>icon</span></th>
@@ -60,10 +60,14 @@ function BangTT (props) {
 
       <tbody>
         <tr>
-          <td>
+          <th>
             <input type="checkbox"></input>
-          </td>
+          </th>
+          <th>Mã sản phẩm</th>
+          <th>Tên sản phẩm</th>
+          <th>Trạng thái</th>
         </tr>
+        
       </tbody>
     </table>
   );

@@ -1,3 +1,6 @@
+.root {
+  background-color: #fcfcfc;
+}
 .App {
   text-align: center;
 }
@@ -51,7 +54,7 @@ button {
   padding: 0;
   overflow: hidden;
   width: 100%;
-  background-color: #dddddd;
+  background-color: #2d6097;
 }
 .nav-item {
   float: right;
@@ -60,4 +63,20 @@ button {
   display: block;
   padding: 8px;
   text-decoration: none;
+  color: white;
+}
+.link-SP:active, .link-SP:visited, .link-SP:hover {
+  color: rgb(30, 58, 172);
+}
+
+/*Content Sản phẩm*/
+.sanPham {
+  margin: 20px 0px;
+  background-color: rgb(230, 230, 245);
+  padding: 10px 10px;
+}
+
+/*Content Trạng thái*/
+.tableTT {
+  margin: 20px 20px;
 }
