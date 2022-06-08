@@ -1,5 +1,5 @@
 .root {
-  background-color: #fcfcfc;
+  background-color: rgb(230, 230, 245);
 }
 .App {
   text-align: center;
@@ -44,6 +44,9 @@ button {
   font-size: calc(10px + 2vmin);
 }
 
+.Content {
+  background-color: rgb(230, 230, 245);
+}
 .navbar-nav {
   display: flex;
   flex-wrap: nowrap;
@@ -72,11 +75,17 @@ button {
 /*Content Sản phẩm*/
 .sanPham {
   margin: 20px 0px;
-  background-color: rgb(230, 230, 245);
+  background-color: white;
   padding: 10px 10px;
 }
 
 /*Content Trạng thái*/
 .tableTT {
   margin: 20px 20px;
+  
+  background-color: white;
+}
+
+.tableTT tr {
+  
 }
